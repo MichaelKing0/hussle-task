@@ -1,5 +1,11 @@
 # Backend test - Url Shortener
 
+## Clone the repository
+
+```
+git clone git@github.com:MichaelKing0/hussle-task.git && cd hussle-task
+```
+
 ## Running the application
 
 The application is set up to run with Docker Compose (it'll take around 5 minutes to download all of the containers it needs to run):

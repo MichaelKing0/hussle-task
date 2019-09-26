@@ -41,12 +41,13 @@ COPY . /var/www
 
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www
+RUN chown www:www -R /var/www && chmod g+rw -R /var/www
 
 # Change current user to www
 USER www
 
 RUN composer install
-RUN php artisan migrate
+RUN php artisan migrate --force
 
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000

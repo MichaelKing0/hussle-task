@@ -12,7 +12,7 @@
 
         <div class="form-group">
             {{ Form::label('url', 'URL to Shorten') }}
-            {{ Form::text('url', '', ['class' => 'form-control']) }}
+            {{ Form::text('url', '', ['class' => 'form-control', 'required' => true]) }}
         </div>
 
         {{ Form::submit('Shorten!', ['class' => 'btn btn-primary']) }}

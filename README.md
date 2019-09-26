@@ -1,4 +1,4 @@
-# Backend test - Url Shortner
+# Backend test - Url Shortener
 
 ## Running the application
 

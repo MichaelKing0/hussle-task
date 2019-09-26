@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\UrlShortener\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

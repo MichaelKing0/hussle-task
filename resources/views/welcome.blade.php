@@ -11,11 +11,15 @@
             <th>Short link</th>
             <th>Visits</th>
         </tr>
-        @foreach($mostVisited as $visited)
+        @forelse($mostVisited as $visited)
             <tr>
                 <td><a href="{{ route('urls.redirectShortUrl', ['path' => $visited->short_path]) }}">{{ route('urls.redirectShortUrl', ['path' => $visited->short_path]) }}</a></td>
                 <td>{{ $visited->visits }}</td>
             </tr>
-        @endforeach
+        @empty
+            <tr>
+                <td colspan="2"><p>There are no URLs to display</p></td>
+            </tr>
+        @endforelse
     </table>
 @endsection

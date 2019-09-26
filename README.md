@@ -6,6 +6,7 @@ The application is set up to run with Docker Compose (it'll take around 5 minute
 
 ```
 docker-compose up -d
+docker-compose exec urlshortener_app composer install && cp .env.example .env && php artisan key:generate && php artisan migrate --force
 ```
 
 The NGINX image will forward port 2222, so you can access the application in your browser by visiting: http://localhost:2222

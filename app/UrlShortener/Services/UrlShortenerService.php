@@ -2,7 +2,7 @@
 
 namespace App\UrlShortener\Services;
 
-use App\Url;
+use App\UrlShortener\Models\Url;
 use App\UrlShortener\Repositories\UrlRepository;
 use App\UrlShortener\Shorteners\ShortenerInterface;
 use Illuminate\Support\Collection;

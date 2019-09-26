@@ -46,9 +46,6 @@ RUN chown www:www -R /var/www && chmod g+rw -R /var/www
 # Change current user to www
 USER www
 
-RUN composer install
-RUN php artisan migrate --force
-
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
 CMD ["php-fpm"]

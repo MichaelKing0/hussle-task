@@ -2,7 +2,7 @@
 
 namespace App\UrlShortener\Repositories;
 
-use App\Url;
+use App\UrlShortener\Models\Url;
 use Illuminate\Support\Collection;
 
 class UrlRepository extends EloquentRepository
